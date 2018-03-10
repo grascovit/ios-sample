@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C01E9578205440040047E3B0 /* Airline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01E9577205440040047E3B0 /* Airline.swift */; };
+		C01E957A205440110047E3B0 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01E9579205440110047E3B0 /* Airport.swift */; };
+		C01E957C205440310047E3B0 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01E957B205440310047E3B0 /* Flight.swift */; };
+		C01E957E205440550047E3B0 /* ManagementCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01E957D205440550047E3B0 /* ManagementCompany.swift */; };
 		C064710920543CB400AFDE78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C064710820543CB400AFDE78 /* AppDelegate.swift */; };
 		C064710B20543CB400AFDE78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C064710A20543CB400AFDE78 /* ViewController.swift */; };
 		C064710E20543CB400AFDE78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C064710C20543CB400AFDE78 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C01E9577205440040047E3B0 /* Airline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline.swift; sourceTree = "<group>"; };
+		C01E9579205440110047E3B0 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		C01E957B205440310047E3B0 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		C01E957D205440550047E3B0 /* ManagementCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementCompany.swift; sourceTree = "<group>"; };
 		C064710520543CB400AFDE78 /* Infraero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infraero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C064710820543CB400AFDE78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C064710A20543CB400AFDE78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C01E957620543FF80047E3B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C01E9579205440110047E3B0 /* Airport.swift */,
+				C01E9577205440040047E3B0 /* Airline.swift */,
+				C01E957B205440310047E3B0 /* Flight.swift */,
+				C01E957D205440550047E3B0 /* ManagementCompany.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C06470FC20543CB400AFDE78 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +73,31 @@
 		C064710720543CB400AFDE78 /* Infraero */ = {
 			isa = PBXGroup;
 			children = (
+				C01E957620543FF80047E3B0 /* Models */,
+				C064711B20543CCD00AFDE78 /* Views */,
+				C064711A20543CBE00AFDE78 /* Controllers */,
 				C064710820543CB400AFDE78 /* AppDelegate.swift */,
-				C064710A20543CB400AFDE78 /* ViewController.swift */,
-				C064710C20543CB400AFDE78 /* Main.storyboard */,
 				C064710F20543CB400AFDE78 /* Assets.xcassets */,
-				C064711120543CB400AFDE78 /* LaunchScreen.storyboard */,
 				C064711420543CB400AFDE78 /* Info.plist */,
 			);
 			path = Infraero;
+			sourceTree = "<group>";
+		};
+		C064711A20543CBE00AFDE78 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C064710A20543CB400AFDE78 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C064711B20543CCD00AFDE78 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C064711120543CB400AFDE78 /* LaunchScreen.storyboard */,
+				C064710C20543CB400AFDE78 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01E9578205440040047E3B0 /* Airline.swift in Sources */,
+				C01E957A205440110047E3B0 /* Airport.swift in Sources */,
+				C01E957E205440550047E3B0 /* ManagementCompany.swift in Sources */,
 				C064710B20543CB400AFDE78 /* ViewController.swift in Sources */,
+				C01E957C205440310047E3B0 /* Flight.swift in Sources */,
 				C064710920543CB400AFDE78 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
