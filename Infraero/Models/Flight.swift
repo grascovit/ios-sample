@@ -4,12 +4,17 @@ class Flight: Equatable {
     private var _number: String
     private var _leavingAt: String
     private var _arrivingAt: String
+    private var _from: String
+    private var _to: String
     private var _airline: Airline
-    
-    init(number: String, leavingAt: String, arrivingAt: String, airline: Airline) {
+
+    init(number: String, leavingAt: String, arrivingAt: String, from: String,
+         to: String, airline: Airline) {
         _number = number
         _leavingAt = leavingAt
         _arrivingAt = arrivingAt
+        _from = from
+        _to = to
         _airline = airline
     }
     
@@ -40,6 +45,26 @@ class Flight: Equatable {
         
         set {
             _arrivingAt = newValue
+        }
+    }
+    
+    var from: String {
+        get {
+            return _from
+        }
+        
+        set {
+            _from = newValue
+        }
+    }
+    
+    var to: String {
+        get {
+            return _to
+        }
+        
+        set {
+            _to = newValue
         }
     }
     

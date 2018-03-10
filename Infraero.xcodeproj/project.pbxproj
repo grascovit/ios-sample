@@ -11,8 +11,9 @@
 		C01E957A205440110047E3B0 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01E9579205440110047E3B0 /* Airport.swift */; };
 		C01E957C205440310047E3B0 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01E957B205440310047E3B0 /* Flight.swift */; };
 		C01E957E205440550047E3B0 /* ManagementCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01E957D205440550047E3B0 /* ManagementCompany.swift */; };
+		C0442BE52054558E00D23B68 /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0442BE42054558E00D23B68 /* FlightTableViewCell.swift */; };
+		C0442BE9205455D700D23B68 /* FlightsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0442BE8205455D700D23B68 /* FlightsTableViewController.swift */; };
 		C064710920543CB400AFDE78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C064710820543CB400AFDE78 /* AppDelegate.swift */; };
-		C064710B20543CB400AFDE78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C064710A20543CB400AFDE78 /* ViewController.swift */; };
 		C064710E20543CB400AFDE78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C064710C20543CB400AFDE78 /* Main.storyboard */; };
 		C064711020543CB400AFDE78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C064710F20543CB400AFDE78 /* Assets.xcassets */; };
 		C064711320543CB400AFDE78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C064711120543CB400AFDE78 /* LaunchScreen.storyboard */; };
@@ -23,9 +24,10 @@
 		C01E9579205440110047E3B0 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		C01E957B205440310047E3B0 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		C01E957D205440550047E3B0 /* ManagementCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementCompany.swift; sourceTree = "<group>"; };
+		C0442BE42054558E00D23B68 /* FlightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightTableViewCell.swift; sourceTree = "<group>"; };
+		C0442BE8205455D700D23B68 /* FlightsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsTableViewController.swift; sourceTree = "<group>"; };
 		C064710520543CB400AFDE78 /* Infraero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infraero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C064710820543CB400AFDE78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C064710A20543CB400AFDE78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C064710D20543CB400AFDE78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C064710F20543CB400AFDE78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C064711220543CB400AFDE78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,7 +88,8 @@
 		C064711A20543CBE00AFDE78 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C064710A20543CB400AFDE78 /* ViewController.swift */,
+				C0442BE8205455D700D23B68 /* FlightsTableViewController.swift */,
+				C0442BE42054558E00D23B68 /* FlightTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,10 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0442BE52054558E00D23B68 /* FlightTableViewCell.swift in Sources */,
 				C01E9578205440040047E3B0 /* Airline.swift in Sources */,
+				C0442BE9205455D700D23B68 /* FlightsTableViewController.swift in Sources */,
 				C01E957A205440110047E3B0 /* Airport.swift in Sources */,
 				C01E957E205440550047E3B0 /* ManagementCompany.swift in Sources */,
-				C064710B20543CB400AFDE78 /* ViewController.swift in Sources */,
 				C01E957C205440310047E3B0 /* Flight.swift in Sources */,
 				C064710920543CB400AFDE78 /* AppDelegate.swift in Sources */,
 			);

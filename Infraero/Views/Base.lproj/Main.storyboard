@@ -1,28 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zmh-NM-W2i">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="Yki-ed-4pP">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Infraero" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tabBarController id="Zmh-NM-W2i" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GhP-hy-7rS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MpU-EO-cGw" kind="relationship" relationship="viewControllers" id="mgG-uo-z5H"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijK-dd-3rb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1054" y="209"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="5iS-ZR-IRN">
+            <objects>
+                <tableViewController id="MpU-EO-cGw" customClass="FlightsTableViewController" customModule="Infraero" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6YH-ca-sG4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FlightCell" id="aNj-yS-fEf" customClass="FlightTableViewCell" customModule="Infraero" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aNj-yS-fEf" id="3FX-9X-YeI">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yzh-U1-xoY">
+                                            <rect key="frame" x="26" y="21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVS-cb-aQx">
+                                            <rect key="frame" x="26" y="78" width="56.5" height="26.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78t-TF-FT5">
+                                            <rect key="frame" x="307" y="79" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2h-ju-6cC">
+                                            <rect key="frame" x="295" y="79" width="8" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPu-K6-5j6">
+                                            <rect key="frame" x="249" y="79" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCh-81-f6C">
+                                            <rect key="frame" x="304.5" y="21" width="44.5" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="BVS-cb-aQx" firstAttribute="leading" secondItem="3FX-9X-YeI" secondAttribute="leadingMargin" constant="10" id="5Df-yZ-Qbo"/>
+                                        <constraint firstItem="fPu-K6-5j6" firstAttribute="top" secondItem="3FX-9X-YeI" secondAttribute="topMargin" constant="68" id="6Q2-G8-57I"/>
+                                        <constraint firstItem="BVS-cb-aQx" firstAttribute="top" secondItem="Yzh-U1-xoY" secondAttribute="bottom" constant="36" id="DcB-gO-Tig"/>
+                                        <constraint firstItem="Yzh-U1-xoY" firstAttribute="top" secondItem="3FX-9X-YeI" secondAttribute="topMargin" constant="10" id="FEo-vN-7RU"/>
+                                        <constraint firstItem="v2h-ju-6cC" firstAttribute="leading" secondItem="fPu-K6-5j6" secondAttribute="trailing" constant="4" id="HrM-mx-R5t"/>
+                                        <constraint firstItem="v2h-ju-6cC" firstAttribute="top" secondItem="3FX-9X-YeI" secondAttribute="topMargin" constant="68" id="O9C-fz-hhH"/>
+                                        <constraint firstItem="78t-TF-FT5" firstAttribute="top" secondItem="NCh-81-f6C" secondAttribute="bottom" constant="37" id="QDM-ZJ-uYU"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="78t-TF-FT5" secondAttribute="trailing" constant="10" id="a4u-aQ-3yG"/>
+                                        <constraint firstItem="Yzh-U1-xoY" firstAttribute="leading" secondItem="3FX-9X-YeI" secondAttribute="leadingMargin" constant="10" id="knL-Lw-3m8"/>
+                                        <constraint firstItem="NCh-81-f6C" firstAttribute="top" secondItem="3FX-9X-YeI" secondAttribute="topMargin" constant="10" id="pXu-GU-BFj"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="NCh-81-f6C" secondAttribute="trailing" constant="10" id="rew-M5-1uY"/>
+                                        <constraint firstItem="78t-TF-FT5" firstAttribute="leading" secondItem="v2h-ju-6cC" secondAttribute="trailing" constant="4" id="z84-Er-OSa"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="airlineNameLabel" destination="Yzh-U1-xoY" id="7AJ-cu-Xem"/>
+                                    <outlet property="flightNumberLabel" destination="NCh-81-f6C" id="A0u-iC-i2w"/>
+                                    <outlet property="flightTimeLabel" destination="BVS-cb-aQx" id="dY3-FM-D5K"/>
+                                    <outlet property="fromLabel" destination="fPu-K6-5j6" id="IOL-M8-xUk"/>
+                                    <outlet property="toLabel" destination="78t-TF-FT5" id="8M0-v4-3bU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MpU-EO-cGw" id="hAc-VN-Pci"/>
+                            <outlet property="delegate" destination="MpU-EO-cGw" id="VnS-73-Qod"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="Ckm-7D-ZhX"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9L-2D-I1n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-268" y="-116.49175412293854"/>
         </scene>
     </scenes>
 </document>
