@@ -36,6 +36,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DepartingFlightCell" id="J3m-TJ-Ca1" customClass="FlightTableViewCell" customModule="Infraero" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="120"/>
@@ -111,7 +112,7 @@
                             <outlet property="delegate" destination="yjD-R2-3MW" id="ZaV-bT-7bS"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Departing" id="Lln-Nd-GxO"/>
+                    <tabBarItem key="tabBarItem" title="Departing" image="departing-plane" id="Lln-Nd-GxO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4E9-iW-WaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,6 +126,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArrivingFlightCell" id="aNj-yS-fEf" customClass="FlightTableViewCell" customModule="Infraero" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="120"/>
@@ -200,11 +202,15 @@
                             <outlet property="delegate" destination="MpU-EO-cGw" id="VnS-73-Qod"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Arriving" id="Ckm-7D-ZhX"/>
+                    <tabBarItem key="tabBarItem" title="Arriving" image="arriving-plane" id="Ckm-7D-ZhX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A9L-2D-I1n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-268" y="-116.49175412293854"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arriving-plane" width="25" height="25"/>
+        <image name="departing-plane" width="25" height="25"/>
+    </resources>
 </document>

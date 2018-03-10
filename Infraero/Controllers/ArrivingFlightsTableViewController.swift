@@ -16,8 +16,8 @@ class ArrivingFlightsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ArrivingFlightCell", for: indexPath) as! FlightTableViewCell
-
         let flight = flights[indexPath.row]
+
         cell.airlineNameLabel.text = flight.airline.name
         cell.flightTimeLabel.text = flight.arrivingAt
         cell.fromLabel.text = flight.from
