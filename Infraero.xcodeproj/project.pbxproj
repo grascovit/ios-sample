@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8574FB4D2054EFB700FB7A44 /* airplane.png in Resources */ = {isa = PBXBuildFile; fileRef = 8574FB4C2054EFB600FB7A44 /* airplane.png */; };
 		C01E9578205440040047E3B0 /* Airline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01E9577205440040047E3B0 /* Airline.swift */; };
 		C01E957A205440110047E3B0 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01E9579205440110047E3B0 /* Airport.swift */; };
 		C01E957C205440310047E3B0 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01E957B205440310047E3B0 /* Flight.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8574FB4C2054EFB600FB7A44 /* airplane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = airplane.png; path = ../../../../Downloads/airplane.png; sourceTree = "<group>"; };
 		C01E9577205440040047E3B0 /* Airline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline.swift; sourceTree = "<group>"; };
 		C01E9579205440110047E3B0 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		C01E957B205440310047E3B0 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		C064711B20543CCD00AFDE78 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8574FB4C2054EFB600FB7A44 /* airplane.png */,
 				C064711120543CB400AFDE78 /* LaunchScreen.storyboard */,
 				C064710C20543CB400AFDE78 /* Main.storyboard */,
 			);
@@ -168,6 +171,7 @@
 				C064711320543CB400AFDE78 /* LaunchScreen.storyboard in Resources */,
 				C064711020543CB400AFDE78 /* Assets.xcassets in Resources */,
 				C064710E20543CB400AFDE78 /* Main.storyboard in Resources */,
+				8574FB4D2054EFB700FB7A44 /* airplane.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
